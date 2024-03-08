@@ -1,0 +1,435 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Archangelsk';
+    src: url(../fonts/Archangelsk.ttf);
+}
+
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.img-main {
+    width: 1903px;
+    height: 1000px;
+    margin-top: -5px;
+}
+
+.header {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 10px;
+    height: 75px;
+    width: 1280px;
+    z-index: 1;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    list-style: none;
+    position: absolute;
+    right: 0;
+    margin-top: -50px;
+    width: 400px;
+}
+
+.container-about {
+    width: 625px;
+    height: 370px;
+    background: rgba(248, 242, 0, 1);
+    border: 0px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 960px;
+    margin-top: 621px;
+    /* clip-path скопировал, читал про него, но сам не смог пока */
+    clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%);
+}
+
+.container-about h2 {
+    font-family: 'Archangelsk';
+    font-size: 68px;
+    font-weight: 400;
+    line-height: 65px;
+    padding-left: 68px;
+    padding-top: 20px;
+}
+
+.button-about {
+    color: yellow;
+    background-color: black;
+    border-style: solid;
+    width: 275px;
+    height: 80px;
+    margin-left: 68px;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.img-main {
+    position: relative;
+}
+
+.container-1 h1 {
+    font-family: 'Archangelsk';
+    font-weight: 400;
+    font-size: 62px;
+    margin-left: 300px;
+}
+
+.info-game {
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+    width: 950px;
+    height: 125px;
+    margin-left: 300px;
+    color: grey;
+}
+
+.info-game span {
+    color: #52BEDC; 
+    font-weight: 700;
+}
+
+.img-game {
+    margin-left: 300px;
+    margin-top: 80px;
+}
+
+.img-game1 {
+    margin-left: 300px;
+    margin-top: 27px;
+}
+
+.img-game2 {
+    margin-left: 850px;
+    margin-top: -428px;
+}
+
+.container-2 {
+    margin-top: 120px;
+}
+
+.container-2__openning {
+    background-image: url(../img/before.svg);
+    background-repeat: no-repeat;
+    height: 70px;
+}
+
+.container-2__content {
+    height: 885px;
+    background-color: black;
+}
+
+.container-2__content h2 {
+    color: white;
+    font-family: "Archangelsk";
+    font-weight: 400;
+    font-size: 60px;
+    margin-left: 465px;
+    margin-top: -78px;
+}
+
+.container-2__content p {
+    color: white;
+    width: 890px;
+    height: 90px;
+    margin-left: 300px;
+    line-height: 35px;
+    font-weight: 400;
+}
+
+.img-sale {
+    margin-left: 300px;
+    margin-top: 35px;
+}
+
+
+span {
+    color: #52BEDC; 
+    font-weight: 700;
+}
+
+
+.img-consoles {
+    position: absolute;
+    right: 10%;
+}
+
+.sale__form {
+    display: flex;
+    flex-direction: column;
+    width: 460px;
+    height: 383px;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+
+.sale__form input[type="name"] {
+    height: 35px;
+    background-color: black;
+    color: yellow;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+.sale__form input[type="mail"] {
+    height: 35px;
+    background-color: black;
+    color: yellow;
+    font-size: 18px;
+    font-weight: 900;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 30px;
+}
+
+.sale__form input[type=file] {
+    width: 460px;
+    height: 120px;
+    margin-top: -50px;
+    border: 1px dashed grey;
+}
+
+
+.file__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 120px;
+    margin-top: 50px;
+    border: 1px dashed grey;
+}
+
+.file__upload {
+    display: none;
+}
+
+.file__upload-text {
+    color: yellow;
+    border-bottom: 1px solid yellow;
+    font-weight: 400;
+    font-size: 18px;
+    margin-top: 40px;
+}
+
+.file__upload-type {
+    color: yellow;
+    font-weight: 400;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.button-send {
+    width: 190px;
+    height: 60px;
+    background-color: yellow;
+    border-color: yellow;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.checkbox-send {
+    border: 1px solid grey;
+    position: absolute;
+    margin-left: 0;
+    margin-top: 15px;
+}
+
+.checkbox-text {
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.container-2__ending {
+    background-image: url(../img/after.svg);
+    background-repeat: no-repeat;
+    height: 70px;
+}
+
+.container-3 {
+    height: 675px;
+    background-color: yellow;
+}
+
+.container-3__img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 630px;
+    margin-left: 300px;
+    padding-top: 100px;
+}
+
+.container-3__logos {
+    margin-top: 30px;
+}
+
+.container-3__about {
+    position: absolute;
+    width: 625px;
+    height: 526px;
+    padding-top: 40px;
+    right: 0;
+    margin-right: 235px;
+}
+
+.container-3__title {
+    font-family: "Archangelsk";
+    font-size: 62px;
+    font-weight: 400;
+}
+
+.container-3__text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-top: -25px;
+}
+
+.container-3__text-1 {
+    display: flex;
+    margin-top: -10px;
+}
+
+.container-3__text-2 {
+    display: flex;
+}
+
+.container-3__text-3 {
+    display: flex;
+}
+
+.container-3__text-1 p {
+    padding-left: 20px;
+}
+
+.container-3__text-2 p {
+    padding-left: 15px;
+}
+
+.container-3__text-3 p {
+    padding-left: 17px;
+}
+
+.container-3__more-info {
+    color: yellow;
+    background-color: black;
+    border: 1px solid black;
+    width: 195px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 23px;
+}
+
+.container-4 {
+    background-color: black;
+    height: 717px;
+    display: flex;
+}
+
+.container-4__game-buy {
+    font-family: "Archangelsk";
+    font-size: 58px;
+    font-weight: 100;
+    color: white;
+    margin-left: 50px;
+    margin-top: -35px;
+}
+
+.container-4__game-buy p {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 700;
+    color: #52BEDC;
+    margin-top: -30px;
+}
+
+.container-4__game-buy ul {
+    list-style: none;
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 50px;
+    margin-top: -10px;
+    margin-left: -43px;
+}
+
+.container-4__game-buy ul li {
+    padding-left: 40px;
+}
+
+.disk-img {
+    background-repeat: no-repeat;
+    background-image: url(../icons/disk.svg);
+    background-position: left;
+}
+
+.save-img {
+    background-repeat: no-repeat;
+    background-image: url(../icons/saving.svg);
+    background-position: left;
+}
+
+.collection-img {
+    background-repeat: no-repeat;
+    background-image: url(../icons/collections.svg);
+    background-position: left;
+}
+
+.container-4__game-platform {
+    padding-top: 50px;
+}
+
+.footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer__content-info a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer__content-info {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__content-logos {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__content-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    background-color: black;
+    color: whitesmoke;
+    font-size: 14px;
+}
